@@ -34,7 +34,7 @@ def build_model(df):
 
     rf = RandomForestRegressor(n_estimators=parameter_n_estimators,
         random_state=parameter_random_state,
-        max_features=parameter_max_features,
+        max_features='sqrt',
         criterion='squared_error',
         min_samples_split=parameter_min_samples_split,
         min_samples_leaf=parameter_min_samples_leaf,
