@@ -106,7 +106,7 @@ with st.sidebar.subheader('2.2. General Parameters'):
 st.subheader('1. Dataset')
 
 if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_csv(uploaded_file, encoding='ISO-8859-1')
     st.markdown('**1.1. Glimpse of dataset**')
     st.write(df)
     build_model(df)
