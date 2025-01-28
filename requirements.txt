@@ -1,0 +1,6 @@
+streamlit==1.41.1
+pandas==2.2.3
+base58==2.1.1
+numpy==2.2.2
+pillow==11.1.0
+scikit-learn==2.2.0
