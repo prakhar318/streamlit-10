@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.datasets import load_diabetes, load_boston
+from sklearn.datasets import load_diabetes, fetch_california_housing
 
 #---------------------------------#
 # Page layout
@@ -123,7 +123,7 @@ else:
         #st.write(df.head(5))
 
         # Boston housing dataset
-        boston = load_boston()
+        boston = fetch_california_housing()
         X = pd.DataFrame(boston.data, columns=boston.feature_names)
         Y = pd.Series(boston.target, name='response')
         df = pd.concat( [X,Y], axis=1 )
